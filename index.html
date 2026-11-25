@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feith Apps: diseño y creación de software</title>
+  <meta name="description" content="Feith Apps: diseño y creación de software y plataformas digitales. Ellas Crecen, la Acadèmia de Català y una primera app en camino a Google Play.">
+  <meta name="theme-color" content="#D3C8B6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido"><span lang="es">Saltar al contenido</span><span lang="en">Skip to content</span></a>
+
+  <header class="nav">
+    <div class="container nav-in">
+      <a class="marca" href="./">Feith Apps</a>
+      <div class="idioma" role="group" aria-label="Idioma / Language">
+        <button type="button" data-set-lang="es" aria-pressed="true">ES</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- Hero: la marca. Bajo la foto, las dos categorías en sus primarios -->
+    <section class="hero" aria-labelledby="hero-h">
+      <div class="container hero-grid">
+        <div class="hero-texto">
+          <h1 id="hero-h">
+            <span class="h1-marca">Feith Apps</span>
+            <span class="h1-frase"><span lang="es">Ideas que se instalan.</span><span lang="en">Ideas you can install.</span></span>
+          </h1>
+          <p class="lead"><span lang="es">Diseño y creación de software y plataformas digitales</span><span lang="en">Software design and digital platforms</span></p>
+          <div class="acciones">
+            <a class="btn btn--primary" href="#proyectos"><span lang="es">Ver proyectos</span><span lang="en">See projects</span></a>
+          </div>
+        </div>
+        <div class="hero-pieza">
+          <!-- Imagen de portada: images/hero.jpg (cuadrada, en blanco y negro). -->
+          <figure class="foto" data-slot="hero" data-kind="photo" data-alt="Feith Apps">
+            <img src="images/hero.jpg" width="1200" height="1200" alt="Mesa de trabajo con un portátil, un móvil y bocetos de pantallas" fetchpriority="high">
+          </figure>
+          <ul class="codigo" aria-label="Categorías / Categories">
+            <li><a class="celda celda--web" href="#plataformas"><span lang="es">Plataformas</span><span lang="en">Platforms</span></a></li>
+            <li><a class="celda celda--play" href="#google-play">Google Play</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos: el cuerpo. Amarillo, plataformas digitales; rojo, apps de Google Play -->
+    <section class="proyectos" id="proyectos" aria-labelledby="proyectos-h">
+      <div class="container">
+        <h2 id="proyectos-h"><span lang="es">Proyectos</span><span lang="en">Projects</span></h2>
+
+        <div class="grupo" id="plataformas">
+          <h3 class="grupo-cabeza relleno--web"><span lang="es">Plataformas digitales</span><span lang="en">Digital platforms</span></h3>
+          <div class="grupo-piezas">
+            <article class="pieza">
+              <figure class="captura" data-slot="ellas" data-kind="product">
+                <img src="images/screens/ellas-desktop.webp" width="1600" height="1000" alt="Portada de Ellas Crecen: una artesana teje una mochila" loading="lazy">
+              </figure>
+              <div class="pieza-texto">
+                <h4>Ellas Crecen</h4>
+                <p><span lang="es">Una plataforma para mujeres emprendedoras: catálogo, formación y finanzas.</span><span lang="en">A platform for women entrepreneurs: catalogue, training and finances.</span></p>
+                <a class="enlace" href="https://ellascrecen.pages.dev" rel="noopener">ellascrecen.pages.dev</a>
+              </div>
+            </article>
+            <article class="pieza">
+              <figure class="captura" data-slot="catala" data-kind="product">
+                <img src="images/screens/catala-desktop.webp" width="1600" height="1000" alt="Portada de la Acadèmia de Català con un ejercicio de ejemplo" loading="lazy">
+              </figure>
+              <div class="pieza-texto">
+                <h4>Acadèmia de Català</h4>
+                <p><span lang="es">Un curso de catalán en línea, con ejercicios que se corrigen al momento.</span><span lang="en">An online Catalan course, with exercises corrected on the spot.</span></p>
+                <a class="enlace" href="https://catala-platform.alberto-buritica-apps.workers.dev" rel="noopener"><span lang="es">Abrir el curso</span><span lang="en">Open the course</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="grupo" id="google-play">
+          <h3 class="grupo-cabeza relleno--play"><span lang="es">Apps de Google Play</span><span lang="en">Google Play apps</span></h3>
+          <div class="pronto">
+            <p class="pronto-grande"><span lang="es">Muy pronto</span><span lang="en">Coming soon</span></p>
+            <p class="pronto-linea"><span lang="es">Nuestra primera app para Android está en el taller.</span><span lang="en">Our first Android app is in the workshop.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="container pie-in">
+      <p class="pie-marca">Feith Apps</p>
+      <p class="pie-datos"><span class="num">2026</span><a href="https://github.com/feithapps" rel="noopener">github.com/feithapps</a></p>
+      <p class="pie-colofon"><span lang="es">Las capturas son de los sitios en línea.</span><span lang="en">Screens captured from the live sites.</span></p>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const titles = { es: 'Feith Apps: diseño y creación de software', en: 'Feith Apps: software design and digital platforms' };
+      const buttons = document.querySelectorAll('[data-set-lang]');
+      const apply = (lang) => {
+        root.dataset.lang = lang;
+        root.lang = lang;
+        document.title = titles[lang];
+        buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.setLang === lang)));
+      };
+      let saved = null;
+      try { saved = localStorage.getItem('feithapps-lang'); } catch (e) {}
+      const guess = (navigator.language || 'es').toLowerCase().startsWith('es') ? 'es' : 'en';
+      apply(saved === 'es' || saved === 'en' ? saved : guess);
+      buttons.forEach((b) => b.addEventListener('click', () => {
+        apply(b.dataset.setLang);
+        try { localStorage.setItem('feithapps-lang', b.dataset.setLang); } catch (e) {}
+      }));
+    })();
+  </script>
+  <script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+  document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
+</body>
+</html>

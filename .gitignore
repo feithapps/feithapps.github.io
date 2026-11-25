@@ -1,0 +1,4 @@
+*.md
+*.txt
+.hallmark/
+node_modules/
