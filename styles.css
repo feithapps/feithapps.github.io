@@ -78,7 +78,7 @@ h1, h2, h3 { text-transform: uppercase; line-height: 1.02; text-wrap: initial; }
 .grupo-cabeza { display: flex; align-items: center; min-height: 72px; max-width: none; padding: 0 var(--space-lg); border-bottom: var(--rule-box) solid var(--color-ink); font-size: var(--text-2xl); }
 .relleno--web { background: var(--color-accent-3); color: var(--color-ink); }
 .relleno--play { background: var(--color-accent-2-deep); color: var(--color-accent-ink); }
-.grupo-piezas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grupo-piezas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .pieza { display: flex; flex-direction: column; min-width: 0; }
 .pieza + .pieza { border-left: var(--rule-box) solid var(--color-ink); }
 .captura { margin: 0; aspect-ratio: 16 / 10; border-bottom: var(--rule-bar) solid var(--color-ink); }
